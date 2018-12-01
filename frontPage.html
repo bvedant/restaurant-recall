@@ -35,5 +35,13 @@ function initMap() {
     <script async defer
     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBebyl9s5I99KQZ45deTuOqYgWTkl-7Vz4&callback=initMap">
     </script>
+    <div id='map' style='width: 400px; height: 300px;'></div>
+    <script>
+      mapboxgl.accessToken = 'pk.eyJ1IjoiYnZlZGFudCIsImEiOiJjanA1dTNmMHMxN2ZpM3FucnBsdnZsZ2txIn0.Qb8eR4kroQjpL-9ETuIx5w';
+      var map = new mapboxgl.Map({
+        container: 'map',
+        style: 'mapbox://styles/mapbox/streets-v10'
+      });
+    </script>
   </body>
 </html>
